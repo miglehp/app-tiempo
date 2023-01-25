@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { LoginService } from '../services/login.service';
 import { Ciudad } from '../model/ciudad';
-import { Clima } from '../model/clima';
 import { WeatherService } from '../services/weather.service';
 
 @Component({

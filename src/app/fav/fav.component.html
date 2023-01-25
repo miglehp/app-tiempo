@@ -2,6 +2,7 @@
     <div class="form-search">
         <label>Selecciona una ciudad:&nbsp;</label>
         <select class="select-ciudades" [(ngModel)]="ciudadName" (change)="changeCiudad()">
+            <option value="">Selecciona una</option>
             <option *ngFor="let fav of favArray" value={{fav}}>{{fav}}</option>
         </select>
         <button class="remove-btn" (click)="removeFromFav()">
@@ -9,7 +10,7 @@
         </button>
     </div>
     <div class="weather-result">
-        <div>Clima: {{data.description}}</div>
-        <div> <img src={{urlImg}} alt=""> </div>
+        <div> <img src={{urlImg}}> </div>
+        <div> Clima: {{data.description}}</div>
     </div>
 </div>

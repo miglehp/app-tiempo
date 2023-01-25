@@ -42,3 +42,10 @@
     box-shadow: inset -0.1rem -0.1rem rgba(0, 0, 0, 0.2);
     color: #fff;
 }
+
+.weather-result {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}

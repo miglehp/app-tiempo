@@ -10,6 +10,7 @@
     </div>
     <div class="form-search">
         <select class="select-ciudades" [(ngModel)]="ciudadId" (change)="addToFav()">
+            <option value="">Selecciona una</option>
             <option *ngFor="let match of matchList" value={{match.name}}>{{match.name}}</option>
         </select>
     </div>

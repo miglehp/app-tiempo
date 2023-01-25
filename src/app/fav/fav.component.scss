@@ -1,5 +1,5 @@
 .fav-container {
-    margin: 1rem auto;
+    margin: 5rem auto 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -7,7 +7,7 @@
 }
 
 .form-search {
-    margin: 1rem auto;
+    margin: 4rem auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -44,8 +44,14 @@
 }
 
 .weather-result {
+    background: radial-gradient(circle, rgba(69,168,94,1) 0%, rgba(164,209,120,1) 50%, rgba(52,164,101,1) 100%);
+    padding: 1rem;
+    border-radius: 25px;
+    min-height: 136px;
+    min-width: 500px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    font-weight: 500;
 }

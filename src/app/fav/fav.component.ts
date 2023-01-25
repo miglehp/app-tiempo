@@ -17,11 +17,13 @@ export class FavComponent implements OnInit {
   ciudadId: string = '';
   favArray: string[] = [];
   matchList: Ciudad[] | undefined;
-  data: Clima = {
-    description: '',
-    icon: '',
-    id: '',
-    main: ''
+  data: any = {
+    main:{
+      temp: '',
+      feels_like: '',
+      temp_min: '',
+      temp_max: '',
+    }
   };
   urlImg: string = ``;
 
@@ -72,7 +74,7 @@ export class FavComponent implements OnInit {
     this.ciudadId = this.matchList[0].id;
     this.weatherService.getWeatherData(this.ciudadId).subscribe((response) => {
       if (response) {
-        this.data = response.weather[0];
+        this.data = response;
         this.urlImg = `http://openweathermap.org/img/wn/${response.weather[0].icon}@2x.png`
       }
     });;

@@ -8,10 +8,6 @@ import { SesionComponent } from './sesion/sesion.component';
 
 const routes: Routes = [
   {
-    path: '*',
-    component: ErrorComponent
-  },
-  {
     path: 'fav',
     component: FavComponent
   },
@@ -26,6 +22,10 @@ const routes: Routes = [
   {
     path: 'sesion',
     component: SesionComponent
+  },
+  {
+    path: '**',
+    component: ErrorComponent
   },
 ];
 

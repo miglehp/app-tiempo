@@ -9,7 +9,6 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { SesionComponent } from './sesion/sesion.component';
 import { ErrorComponent } from './error/error.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { TypeaheadModule } from 'ngx-bootstrap/typeahead';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 
@@ -29,7 +28,6 @@ import { HttpClientModule } from '@angular/common/http';
     FormsModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
-    TypeaheadModule.forRoot(),
     HttpClientModule,
   ],
   providers: [],

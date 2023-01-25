@@ -1,0 +1,29 @@
+.form-search {
+    margin: 1rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-ciudad {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.search-ciudad-header {
+    font-family: 'unbounded';
+    font-weight: 350;
+    margin: 1rem;
+}
+
+.select-ciudades, .filtro-ciudades {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0.2rem;
+    padding: 0.3rem;
+    font-weight: 500;
+    border-radius: 5px;
+    width: 12rem;
+}

@@ -1,5 +1,26 @@
 <div class="navbar">
-  <section class="Icon">Icono</section>
-  <section class="Nav">Navegación</section>
-  <section class="Sesion">Cerrar Sesión</section>
+  <section class="Icon">
+    <a routerLink="main">
+      <img
+      class="Icon-navbar"
+      src="../../assets/weather.svg"
+      alt="Nubes de lluvia con un sol detrás"
+    />
+    </a>
+  </section>
+  <section class="Nav">
+    <ul>
+        <li><a routerLink="">Inicio</a></li>
+        <div class="nav-cond" >|
+          <li><a routerLink="fav">Favoritos</a></li></div>
+    </ul>
+  </section>
+  <section class="Sesion">
+    <img
+      class="Icon-navbar"
+      src="../../assets/logOut.svg"
+      alt="Nubes de lluvia con un sol detrás"
+      (click)="logOut()"
+    />
+  </section>
 </div>

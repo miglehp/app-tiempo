@@ -1,6 +1,52 @@
+ul {
+    display: flex;
+    list-style-type: none;
+    li {
+        padding: 0 1rem;
+    }
+}
+
+a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #1E1E1E;
+}
+
+a:hover {
+    color: #fff;
+}
+
 .navbar {
-    background-color: green;
+    background: radial-gradient(circle, rgba(69,168,94,1) 0%, rgba(164,209,120,1) 50%, rgba(52,164,101,1) 100%);
     padding: 0.5rem;
     display: flex;
-    justify-content: space-between;
+    justify-content:left;
+    box-shadow: 0 0.5rem rgba(0, 0, 0, 0.215);
+}
+
+.nav-cond {
+    display: flex;
+}
+
+.Icon{
+    display: flex;
+}
+
+.Nav{
+    font-family: 'Unbounded';
+    color: #1E1E1E;
+    display: flex;
+    margin-left: 2rem;
+    margin-top: 1rem;
+}
+
+.Sesion{
+    display: flex;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.Icon-navbar{
+    width: 3rem;
+    height: 3rem;
 }

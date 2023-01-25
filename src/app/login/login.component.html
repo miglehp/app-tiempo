@@ -1,1 +1,28 @@
-<p>login works!</p>
+<div class="login-box">
+  <form action="get" class="login-form">
+    <label>Nombre de usuario</label>
+    <input
+      type="text"
+      id="username"
+      placeholder="nombre de usuario"
+      [(ngModel)]="username"
+      [ngModelOptions]="{standalone: true}"
+      required
+    />
+    <label>Contraseña</label>
+    <input
+      type="password"
+      id="password"
+      placeholder="contraseña"
+      [(ngModel)]="password"
+      [ngModelOptions]="{standalone: true}"
+      required
+    />
+    <input
+      type="submit"
+      class="login-btn"
+      value="Iniciar Sesión"
+      (click)="clickLogin()"
+    />
+  </form>
+</div>

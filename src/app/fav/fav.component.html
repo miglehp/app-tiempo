@@ -1,1 +1,15 @@
-<p>fav works!</p>
+<div class="fav-container">
+    <div class="form-search">
+        <label>Selecciona una ciudad:&nbsp;</label>
+        <select class="select-ciudades" [(ngModel)]="ciudadName" (change)="changeCiudad()">
+            <option *ngFor="let fav of favArray" value={{fav}}>{{fav}}</option>
+        </select>
+        <button class="remove-btn" (click)="removeFromFav()">
+            Borrar de Favoritos
+        </button>
+    </div>
+    <div class="weather-result">
+        <div>Clima: {{data.description}}</div>
+        <div> <img src={{urlImg}} alt=""> </div>
+    </div>
+</div>

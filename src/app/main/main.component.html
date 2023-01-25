@@ -1,1 +1,16 @@
-<p>main works!</p>
+<div class="search-ciudad">
+    <h3 class="search-ciudad-header">Selector de ciudades</h3>
+    <div class="form-search">
+        <label>filtro:&nbsp;</label>
+        <input type="text" 
+        class="filtro-ciudades" 
+        [(ngModel)]="searchText"
+        (input)="filterSearch()"
+        placeholder="Ciudad">
+    </div>
+    <div class="form-search">
+        <select class="select-ciudades" [(ngModel)]="ciudadId" (change)="addToFav()">
+            <option *ngFor="let match of matchList" value={{match.name}}>{{match.name}}</option>
+        </select>
+    </div>
+</div>
